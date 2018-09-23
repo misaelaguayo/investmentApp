@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">List App</string>
+
+    <string-array name="items">
+        <item>AAPL</item>
+        <item>TXN</item>
+        <item>MSFT</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>$0.99</item>
+        <item>$1.49</item>
+        <item>$0.89</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Apple stock price</item>
+        <item>Texas Instruments stock price</item>
+        <item>Microsoft stock price</item>
+    </string-array>
+</resources>
