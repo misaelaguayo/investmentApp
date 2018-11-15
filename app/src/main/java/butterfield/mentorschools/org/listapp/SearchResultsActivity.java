@@ -21,26 +21,19 @@ public class SearchResultsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search_results);
 
         Intent in = getIntent();
-        String searchResult =  in.getStringExtra("userInput");
-        EditText searchBar = (EditText) findViewById(R.id.searchBar);
-        searchBar.setText(searchResult);
+        String searchRaw =  in.getStringExtra("userInput");
+        String searchResult;
+        if (searchRaw.equals("aapl"))
+        {
+            searchResult = "Apple, Inc.";
+        }
+        else
+        {
+            searchResult = "sample";
+        }
 
-        Resources res = getResources();
-        myListView = (ListView) findViewById(R.id.myListView);
-        companies = res.getStringArray(R.array.items);
-        percentChange = res.getStringArray(R.array.prices);
-        ticker = res.getStringArray(R.array.descriptions);
+        EditText companyName = (EditText) findViewById(R.id.companyName);
+        companyName.setText(searchResult);
 
-        ItemAdapter itemAdapter= new ItemAdapter(this,companies,percentChange,ticker);
-        myListView.setAdapter(itemAdapter);
-
-        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent showDetailActivity = new Intent(getApplicationContext(),DetailActivity.class);
-                showDetailActivity.putExtra("butterfield.mentorschools.org.ITEM_INDEX",position);
-                startActivity(showDetailActivity);
-            }
-        });
     }
 }

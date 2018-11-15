@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">List App</string>
+    <string name="companyName">Company Name</string>
+    <string name="companyOpen">Open</string>
 
     <string-array name="items">
         <item>Apple</item>
