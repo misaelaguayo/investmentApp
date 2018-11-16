@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchResultsActivity">
+    tools:context=".inDepthAnalysis">
 
     <ScrollView
-        android:layout_width="368dp"
-        android:layout_height="551dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -24,10 +24,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
+            <TextView
                 android:id="@+id/companyName"
                 android:layout_width="160dp"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
@@ -37,7 +37,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
+            <TextView
                 android:id="@+id/open"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/followUnfollow" />
 
-            <EditText
+            <TextView
                 android:id="@+id/fortyFiveDay"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/shareVolume" />
 
-            <EditText
+            <TextView
                 android:id="@+id/beta"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                 app:layout_constraintStart_toEndOf="@+id/fortyFiveDay"
                 app:layout_constraintTop_toBottomOf="@+id/marketCap" />
 
-            <EditText
+            <TextView
                 android:id="@+id/sharesOutstanding"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fortyFiveDay" />
 
-            <EditText
+            <TextView
                 android:id="@+id/netIncome"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 app:layout_constraintStart_toEndOf="@+id/sharesOutstanding"
                 app:layout_constraintTop_toBottomOf="@+id/beta" />
 
-            <EditText
+            <TextView
                 android:id="@+id/sharesOutstanding2"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sharesOutstanding" />
 
-            <EditText
+            <TextView
                 android:id="@+id/earningPerShare"
                 android:layout_width="160dp"
                 android:layout_height="45dp"
@@ -133,7 +133,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sharesOutstanding2" />
 
-            <EditText
+            <TextView
                 android:id="@+id/peRatio"
                 android:layout_width="160dp"
                 android:layout_height="45dp"
@@ -149,7 +149,7 @@
                 app:layout_constraintStart_toEndOf="@+id/earningPerShare"
                 app:layout_constraintTop_toBottomOf="@+id/closingShare" />
 
-            <EditText
+            <TextView
                 android:id="@+id/fiftyTwoWeekHigh"
                 android:layout_width="160dp"
                 android:layout_height="45dp"
@@ -162,7 +162,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/earningPerShare" />
 
-            <EditText
+            <TextView
                 android:id="@+id/predictedROI"
                 android:layout_width="160dp"
                 android:layout_height="45dp"
@@ -176,7 +176,7 @@
                 app:layout_constraintTop_toTopOf="@+id/predictedShareValue"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <EditText
+            <TextView
                 android:id="@+id/currentUserShareValue"
                 android:layout_width="160dp"
                 android:layout_height="45dp"
@@ -191,7 +191,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/predictedROI" />
 
-            <EditText
+            <TextView
                 android:id="@+id/predictedUserValue"
                 android:layout_width="160dp"
                 android:layout_height="45dp"
@@ -209,9 +209,9 @@
                 app:layout_constraintStart_toEndOf="@+id/currentUserShareValue"
                 app:layout_constraintTop_toBottomOf="@+id/predictedShareValue" />
 
-            <EditText
+            <TextView
                 android:id="@+id/inputShares"
-                android:layout_width="220dp"
+                android:layout_width="160dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
@@ -222,7 +222,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fiftyTwoWeekHigh" />
 
-            <EditText
+            <TextView
                 android:id="@+id/fiftyTwoWeekLow"
                 android:layout_width="160dp"
                 android:layout_height="45dp"
@@ -237,7 +237,7 @@
                 app:layout_constraintStart_toEndOf="@+id/fiftyTwoWeekHigh"
                 app:layout_constraintTop_toTopOf="@+id/fiftyTwoWeekHigh" />
 
-            <EditText
+            <TextView
                 android:id="@+id/predictedShareValue"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -253,7 +253,7 @@
                 app:layout_constraintStart_toEndOf="@+id/predictedROI"
                 app:layout_constraintTop_toBottomOf="@+id/timeUnit" />
 
-            <EditText
+            <TextView
                 android:id="@+id/closingShare"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -269,7 +269,7 @@
                 app:layout_constraintStart_toEndOf="@+id/sharesOutstanding2"
                 app:layout_constraintTop_toBottomOf="@+id/netIncome" />
 
-            <EditText
+            <TextView
                 android:id="@+id/shareVolume"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -282,7 +282,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/dailyHigh" />
 
-            <EditText
+            <TextView
                 android:id="@+id/marketCap"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -298,7 +298,7 @@
                 app:layout_constraintStart_toEndOf="@+id/shareVolume"
                 app:layout_constraintTop_toBottomOf="@+id/dailyLow" />
 
-            <EditText
+            <TextView
                 android:id="@+id/dailyHigh"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -311,7 +311,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/open" />
 
-            <EditText
+            <TextView
                 android:id="@+id/dailyLow"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -323,7 +323,7 @@
                 app:layout_constraintStart_toStartOf="@+id/previousClose"
                 app:layout_constraintTop_toBottomOf="@+id/previousClose" />
 
-            <EditText
+            <TextView
                 android:id="@+id/previousClose"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -340,7 +340,7 @@
                 app:layout_constraintStart_toEndOf="@+id/open"
                 app:layout_constraintTop_toTopOf="@+id/open" />
 
-            <EditText
+            <TextView
                 android:id="@+id/lastUpdated"
                 android:layout_width="106dp"
                 android:layout_height="wrap_content"
@@ -353,7 +353,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/shareValue" />
 
-            <EditText
+            <TextView
                 android:id="@+id/shareValue"
                 android:layout_width="106dp"
                 android:layout_height="wrap_content"
@@ -366,9 +366,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/companyName" />
 
-            <EditText
+            <TextView
                 android:id="@+id/companyTicker"
-                android:layout_width="160dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
@@ -382,7 +382,7 @@
                 app:layout_constraintStart_toEndOf="@+id/companyName"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
+            <TextView
                 android:id="@+id/companyChange"
                 android:layout_width="106dp"
                 android:layout_height="wrap_content"
@@ -392,10 +392,10 @@
                 android:ems="10"
                 android:hint="Company Change"
                 android:inputType="textPersonName"
-                app:layout_constraintStart_toEndOf="@+id/shareValue"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/companyTicker" />
 
-            <EditText
+            <TextView
                 android:id="@+id/date"
                 android:layout_width="106dp"
                 android:layout_height="wrap_content"
@@ -408,7 +408,7 @@
                 app:layout_constraintStart_toEndOf="@+id/lastUpdated"
                 app:layout_constraintTop_toBottomOf="@+id/companyChange" />
 
-            <EditText
+            <TextView
                 android:id="@+id/time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -424,12 +424,10 @@
                 app:layout_constraintStart_toEndOf="@+id/date"
                 app:layout_constraintTop_toBottomOf="@+id/percentChange" />
 
-            <EditText
+            <TextView
                 android:id="@+id/percentChange"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
@@ -437,7 +435,6 @@
                 android:hint="Percent Change"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/companyChange"
                 app:layout_constraintTop_toBottomOf="@+id/companyTicker" />
 
             <Button
@@ -454,30 +451,31 @@
 
             <Switch
                 android:id="@+id/stockToggle"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 app:layout_constraintBottom_toBottomOf="@id/inputShares"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/inputShares"
                 app:layout_constraintTop_toBottomOf="@+id/fiftyTwoWeekLow" />
 
-            <TextView
+            <EditText
                 android:id="@+id/amtTime"
-                android:layout_width="106dp"
+                android:layout_width="77dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:text="Amount of Time"
                 app:layout_constraintBottom_toBottomOf="@+id/calculate"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/calculate" />
 
             <Spinner
                 android:id="@+id/timeUnit"
-                android:layout_width="106dp"
+                android:layout_width="90dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
@@ -493,7 +491,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Calculate"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/fiftyTwoWeekLow"
                 app:layout_constraintStart_toEndOf="@+id/timeUnit"
                 app:layout_constraintTop_toBottomOf="@+id/stockToggle" />
         </android.support.constraint.ConstraintLayout>
